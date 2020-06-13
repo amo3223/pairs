@@ -1,0 +1,12 @@
+<input type="button" id="btn" value="点击生成随机四位数" />
+<span id="num"></span>
+<script>
+function rand(min,max) {
+    return Math.floor(Math.random()*(max-min))+min;
+}
+var btn=document.getElementById("btn");
+btn.onclick=function(){
+    var randnum=rand(1000,9999);
+    document.getElementById("num").innerHTML=randnum;
+}
+</script>
